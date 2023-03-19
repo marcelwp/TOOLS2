@@ -3,25 +3,81 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta name="description" content="La Mola. Benvinguts!">
+    <title>LA MOLA</title>
   </head>
+  
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title"> <i class="fas fa-university">Hello, UOC!</i></h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <header>
+      <div class="container container-header">
+        <div class="header-logo-link">
+            <h1>LA MOLA</h1>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container container-figureta">
+        <figure class="fig__figureta">
+          <picture>
+            <img src="assets/images/laMola_drone.jpeg" class="img__img-fluid" width="900" alt="laMola">
+          </picture>
+          <figcaption class="fig__peu">
+            <p>Foto de la Mola.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <div class="container container-article">
+        <h1>La muntanya</h1>
+        <p>
+          La Mola és una muntanya del massís de Sant Llorenç del Munt, situat a la Serralada Prelitoral. 
+          Amb 1.103,25 m d'alçada, és el punt més elevat del massís i és el sostre comarcal del Vallès Occidental. 
+          Administrativament, el cim i gran part de la muntanya pertanyen al municipi de Matadepera, si bé alguns contraforts del vessant est són al terme municipal de Castellar del Vallès i alguns contraforts del vessant nord són al terme municipal de Sant Llorenç Savall.
+        </p>
+        <h1>Llocs on menjar</h1>
+        <p>
+          Hi ha 2 restaurants dins del Parc Natural. Un és el restaurant situat al cim, al monestir. L'altre està situat a Can Pobla.
+        </p>
+        <h1>Accessos</h1>
+        <p>
+          Hi ha diversos senders i camins per accedir al cim de la Mola, a més de diversos camins i corriols que porten a altres indrets de la muntanya. 
+          No obstant això, hi ha tres senders d'accés principals:
+          <ol>
+            <li>
+              El camí més freqüentat per pujar al cim, amb gran diferència, és el camí dels Monjos, senyalitzat com a sender de petit recorregut PR-C 31. 
+              Es tracta d'un camí històric que connecta els antics nuclis monacals de Sant Cugat del Vallès i Sant Llorenç del Munt. 
+              L'inici d'aquest camí se sol fer des del lloc anomenat "els Dipòsits", situat al capdamunt del carrer de les Belles Roques, a Matadepera, on hi ha un aparcament. 
+              El camí comença a una alçada d'uns 635 m i té un desnivell de 481 m al llarg de 2,563 km.
+            </li>
+            <li>
+              El segon camí més freqüentat és el camí que surt dels aparcaments de Can Robert, senyalitzat com a sender local SL-C 50. 
+              El camí passa per la necròpolis medieval de Can Robert,[19] passa a prop de Can Pobla i s'ajunta al camí dels Monjos a l'indret anomenat Pi del Vent. 
+              L'inici és a 672 m d'alçada i té un desnivell de 426 m al llarg de 3,52 km. 
+              Ambdós camins, situats al vessant sud de la muntanya, són els més curts i de més fàcil accés i, l'any 2012, tenien una freqüentació mitjana, en conjunt, d'unes 14.000 persones cada mes. 
+              En conseqüència, es tracta dels dos camins d'accés a la Mola més degradats i erosionats per l'ús públic (primer, el camí dels Monjos, seguit del camí de Can Robert).    
+            </li>
+            <li>
+              El tercer camí més freqüentat és el camí que surt del coll d'Estenalles, senyalitzat com a sender local SL-C 54 i que ve des del vessant nord del massís. 
+              El camí comença al costat del Centre d'Interpretació del Coll d'Estenalles i segueix una pista forestal fins al coll d'Eres, lloc on conflueix el camí carener que porta al cim del Montcau. 
+              Des d'aquest punt, continua per la carena del Pagès, passa a prop dels Òbits i del Morral del Drac fins a arribar al cim de la Mola. 
+              L'inici és a 869 m i té un desnivell de 552 m al llarg de 5,8 km. Aquest camí, l'any 2012, tenia una freqüentació mitjana d'unes 2.000 persones cada mes.
+               El tram que va des del coll d'Estenalles al coll d'Eres també és lloc de pas del GR 5, el qual uneix Sitges i Canet de Mar.
+            </li>
+          </ol>
+        </p>
+        <p>
+          Marcel Weichsel
+        </p>
+      </div>
+    </section>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  
   </body>
 </html>
