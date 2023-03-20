@@ -2,9 +2,17 @@
   box-sizing: border-box;
 }
 
+a:link {
+    color:black;
+  }
+a:visited {
+    color:white;
+}
+a:hover {
+    color: darkred;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   margin: 0;
   font-family: $font-family-sans-serif;
@@ -20,6 +28,19 @@ body {
   padding: 1rem;
 }
 
+.container-header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $fons_secondari;
+}
+
+.container-article {
+  background-color: $fons_secondari;
+  border-radius: 4px;
+}
+
 .container-figureta {
   padding: 0;
 }
@@ -29,17 +50,35 @@ body {
 }
 
 .fig__peu {
-  padding: 0rem 1rem 0rem 1rem;
+  padding: 0.5rem 1rem 2rem 1rem;
 }
 
 .img__img-fluid {
   max-width: 100%;
 }
 
-.uoc-title {
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+.container-activitats {
+  @media (max-width: $mqMinWidth) {
+    display: block;
   }
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
 }
+
+.vies {
+  background-color: $fons_secondari;
+}
+
+.lamola-footer {
+  display: flex;
+  align-items: center;
+}
+
+.clip-circle {
+  clip-path:circle(4rem at center);
+  display: block;
+  margin: auto;
+}
+
 
