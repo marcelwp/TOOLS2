@@ -23,7 +23,7 @@ body {
   }
   line-height: 24px;
   color: $lletra;
-  background: linear-gradient(-45deg, #b0a489, #b2a078);
+  background: linear-gradient(-45deg, $gradientcolor1, $gradientcolor2);
   background-size: 400% 800%;
   animation: gradient 10s ease infinite;
 }
@@ -45,58 +45,61 @@ body {
   margin: auto;
   padding: 1rem;
   border-radius: 4px;
-}
 
-.container-header {
-  background-color: $fons;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-  h1 {
-    font-size: 3rem;
+  &--header {
+    background-color: $fons;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  &--figureta {
+    padding: 0;
+  }
+
+  &--fonscontrast {
+    background-color: $fons;
+  }
+
+  &--fonsintegrat {
+    color: $destacat;
+  }
+
+  &--activitats {
+    display: block;
+
+    @media (min-width: $mqMinWidth) {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 1rem;
+    }
+  }
+
+  &--autor {
+    display: flex;
+    align-items: center;
+    color: $destacat;
   }
 }
 
-.container-figureta {
-  padding: 0;
-}
-
-.container-article {
-  background-color: $fons;
-  border-radius: 4px;
-}
-
-.integrat {
-  color: $destacat;
-}
-
-.fig__figureta {
+.figureta {
   margin: 0;
+
+  &__picture img {
+    filter:  brightness(110%);
+  }
+
+  &__figcap {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
 }
 
-.fig__peu {
-  padding: 0.5rem 1rem 2rem 1rem;
-}
-
-.img__img-fluid {
+.img-fluid {
   max-width: 100%;
   border-radius: 4px
-}
-
-.container-activitats {
-  display: block;
-
-  @media (min-width: $mqMinWidth) {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1rem;
-  }
-}
-
-.autor {
-  display: flex;
-  align-items: center;
-  color: $destacat;
 }
 
 .clip-circle {
