@@ -251,7 +251,3 @@ $RECYCLE.BIN/
 
 ### UOC Boilerplate ###
 dist
-
-#Marcel
-/node_modules
-/.parcel-cache
